@@ -16,7 +16,10 @@ Use the wiki to store useful information in a searchable place. This could inclu
 
 ### Discussion
 
-Use the discussion area to ask questions or make announcements. **TO DO: Is this useful considering we have a slack channel?**
+Use the discussion area to ask questions or make announcements. 
+
+**TO DO**
+- [ ] Is this useful considering we have a slack channel?
 
 ### 
 
