@@ -34,5 +34,11 @@ In order to contribute to the book club repo, the following steps must be taken:
 4. Explain the changes made or feature added.
 5. Request a review.
 
+## What to use this github for
+These are just some ideas :) in general it's a collaborative home for notes/thoughts about the bookclub, and a way for some of us to practice github.
 
+* Sharing the code we've written during exercises
+* Sharing useful info and links
+* Sharing notes on the reading
+* Feel free to add more!
 
