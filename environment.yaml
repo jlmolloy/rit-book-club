@@ -1,0 +1,10 @@
+# conda env create -f environment.yaml
+# https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/
+# https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+name: r_env
+channels:
+  - r
+dependencies:
+  - r-essentials
+  - r-base
+  - jupyterlab
