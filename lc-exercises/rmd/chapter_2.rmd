@@ -1,0 +1,68 @@
+---
+title: "chapter_02"
+output: html_document
+date: "2023-03-08"
+author: "Lucy Cheesman"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library("tidyverse")
+library("janitor")
+library("GGally")
+
+install.packages("GGally")
+```
+
+
+# Q8
+
+- I'm going to try to do the exercises with `tidyverse` commands instead
+
+```{r}
+# a
+college <- read_csv("../data/College.csv")
+
+
+college
+
+```
+
+```{r}
+
+#b
+college_tidy <- college %>% 
+  clean_names() %>%
+  mutate(college = x1) %>%
+  select(-x1) %>%
+  mutate(rown = row_number())
+
+glimpse(college_tidy)
+
+```
+
+```{r}
+#c
+summary(college_tidy)
+```
+- Discovered the `GGally` package and its `ggpairs` function
+
+```{r}
+
+# this is doing what it says but seems utterly pointless tbh
+
+college_tidy %>%
+  select(1:10, rown) %>%
+  ggpairs(aes(colour = private))
+```
+
+```{r}
+# iii
+college_tidy %>% 
+  ggplot() +
+  geom_boxplot(aes(y=outstate, colour = private))
+```
+
